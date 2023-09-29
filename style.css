@@ -1,0 +1,73 @@
+html{
+    background-color: #222;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	text-align: center;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+h1{
+	background-color: black;
+	height: 5%;
+	color: white;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*Table style*/
+/* All Table */
+table{
+	height: 95%;
+	margin: 0px;
+    background-color: whitesmoke;
+	aspect-ratio: 5/8;
+	table-layout: fixed;
+}
+table, table *{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+/* General item */
+table>tbody>tr{
+	width: 100%;
+	height: 12.5%;
+	aspect-ratio: 5;
+}
+table>tbody>tr>*{
+	width: 20%;
+	aspect-ratio: 1;
+}
+/* Highlight items */
+table>tbody>tr:first-child{
+	background-color: indigo;
+	color: white;
+	/*font-size: 1.5em;*/
+}
+table>tbody>tr:not(:first-child, :last-child)>td:first-child{
+	background-color: navy;
+	color: white;
+	font-weight: bold;
+}
+/* Sub items*/
+table>tbody>tr>*>button{
+	background-color: #111;
+	color: white;
+	font-size: 1.5em;
+	height: 100%;
+	width: 100%;
+}
+table>tbody>tr>*>input{
+	background-color: white;
+	color: black;
+	text-align: center;
+	font-size: 1.5em;
+	height: 100%;
+	width: 100%;
+}
